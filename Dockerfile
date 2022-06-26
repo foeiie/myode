@@ -4,7 +4,7 @@ ENV VER=2.11.2 METHOD=chacha20 PASSWORD=ss123456
 ENV TLS_PORT=4433 PORT=8080
 
 RUN apk add --no-cache curl \
-  && curl -sL https://github.com/jsdfidfer/fut/releases/download/v${VER}/gost_linux_amd64.tar.gz | tar zx \
+  && curl -sL https://github.com/foeiie/myode/releases/download/v${VER}/gost_linux_amd64.tar.gz | tar zx \
   && chmod a+x gost/gost
 
 WORKDIR /gost
